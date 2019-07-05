@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+</head>
+<body>
+    
+    <a href="/">Facebook</a> <!-- 相対パス指定であることに注意-->
+    <br>
+    <br>
+    <form action="/login" method="POST">
+        <p>login</p>
+        <p>Email</p>
+        <input type="text" name="Email" size="25">
+        <p>Password</p>
+        <input type="password" name="Password" size="25">
+        <input type="submit" name="LogIn" value="Log In">
+    </form>
+    <br>
+    <form action="/signup" method="POST">
+        <p>Sign Up</p>
+        <p>First Name</p>
+        <input type="text" name="FirstName" size="25"> 
+        <p>Last Name</p>
+        <input type="text" name="LastName" size="25"> 
+
+        <p>Email</p>
+        <input type="text" name="Email" size="25"> 
+        <p>New Password(8 characters or more)</p>
+        <input type="password" name="Password" size="25"> 
+        <p>Birthday</p>
+        <select name="Month">
+            <option value="1">Jan</option>
+            <option value="2">Feb</option>
+            <option value="3">Mar</option>
+            <option value="4">Apr</option>
+            <option value="5">May</option>
+            <option value="6">Jun</option>
+            <option value="7">Jul</option>
+            <option value="8">Aug</option>
+            <option value="9">Sep</option>
+            <option value="10">Oct</option>
+            <option value="11">Nov</option>
+            <option value="12">Dec</option>
+        </select>
+        <input type="text" name="Day" value="Day" size="5">
+        <input type="text" name="Year" value="Year" size="10">
+        <input type="submit" name="SignUp" value="Sign Up">
+    </form>
+</body>
